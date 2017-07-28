@@ -1,19 +1,490 @@
-<style type="text/css">
-	body{
-		background: blue;
-	}
-	.title{
-		color: red;
-		font-size: 19px;
 
-	}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+	$(function() {
+  var aniMate1 = $("#bar1");
+  var aniMate2 = $("#bar2");
+  var aniMate3 = $("#bar3");
+  var aniMate4 = $("#bar4");
+  var aniMate5 = $("#bar5");
+
+  aniMate1.hover(function() {
+    var timer = aniMate1.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate1.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate1.removeClass("floating");
+    }, 9000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+
+  aniMate2.hover(function() {
+    var timer = aniMate2.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate2.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate2.removeClass("floating");
+    }, 9000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+
+  aniMate3.hover(function() {
+    var timer = aniMate3.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate3.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate3.removeClass("floating");
+    }, 9000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+
+  aniMate4.hover(function() {
+    var timer = aniMate4.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate4.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate4.removeClass("floating");
+    }, 9000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+
+  aniMate5.hover(function() {
+    var timer = aniMate5.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate5.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate5.removeClass("floating");
+    }, 9000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+});
+
+</script>
+
+<style type="text/css">
+	.H{
+  background-color: #9bc995 ;
+  display: inline-block;
+  position:relative;
+  width:20%;
+  height: 350px;
+}.H:hover{
+  background-color: #8f3985 ;
+}.O{
+  background-color: #98b9ab ;
+  display: inline-block;
+  position: relative;
+  width:20%;
+  height: 350px;
+}.O:hover{
+  background-color: #564138  ;
+}.V{
+  background-color: #5171a5 ;
+  display: inline-block;
+  position: relative;
+  width:20%;
+  height: 350px;
+}.V:hover{
+  background-color: #db5461 ;
+}.E{
+  background-color: #3f3047 ;
+  display: inline-block;
+  position: relative;
+  width:20%;
+  height: 350px;
+}.E:hover{
+  background-color: #6dd3ce ;
+}.R{
+  background-color: #eef36a ;
+  display: inline-block;
+  position: relative;
+  width:20%;
+  height: 350px;
+}.R:hover{
+  background-color: #f46036 ;
+}
+
+
+
+
+
+h1{
+  font-family: 'Monoton', cursive;
+}body {
+  background: #fff;
+  margin-top: 250px;
+  font-family: "Raleway", sans-serif;
+}
+header {
+  background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) fixed; 
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  height: 200px;
+}.headerz{
+  position: relative; 
+  margin: 2% auto;
+  width: 33%;
+    
+}.headerz h1{
+  color: #fff;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px #212121;
+}
+
+/*********************************************************/
+.text-center {
+  text-align: center !important;
+}
+.title {
+  margin-top: 200px;
+  color: red;
+  font-size: 19px;
+  
+}
+.Movies {
+  background:grey;
+ 
+  margin: 0 auto;
+  text-align: center;
+  /* maybe use max-width*/
+  width: 50%;
+}
+.Menu {
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  );
+  box-shadow: 1px 1px 1px black;
+  margin: 0 auto;
+  text-align: center;
+  /* maybe use max-width*/
+  width: 50%;
+}.Menu h1{
+  font-size: 100px;
+
+  font-weight: bold;
+}
+
+
+.bodyz {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  display: inline;
+}
+.boxz3 {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  background: url(https://media.giphy.com/media/26gskofCNU8Tl4duU/giphy.gif)
+    fixed;
+  background-size: cover;
+}
+.movie1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.movie2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.bg-box#Zpace {
+  background: url(http://thepatternlibrary.com/img/an.jpg) fixed;
+/*   background-size: cover; */
+  background-position: center center;
+}.bg-box#Zpace-2 {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/8/87/LH_95.jpg) fixed;
+/*   background-size: cover;
+  background-position: center center; */
+}
+/*
+==============================================
+floating
+==============================================
+*/
+
+.floating-2 {
+  animation-name: floating-2;
+  -webkit-animation-name: floating-2;
+
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes floating-2 {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+.bar-1 {
+  background: #fff;
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  width: 10%;
+}
+.x2 {
+  height: 150px !important;
+}
+.x3 {
+  height: 200px !important;
+}
+.x4 {
+  height: 300px !important;
+}
+.x5 {
+  height: 350px !important;
+}
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+
+  animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+}
+@keyframes floating {
+  0% {
+    box-shadow: 0 0 15px -4px #c63737;
+    -webkit-box-shadow: 0 0 15px -4px #c63737;
+    -moz-box-shadow: 0 0 15px -4px #c63737;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 0 15px 3px #000;
+    -webkit-box-shadow: 0 0 15px 3px #c63737;
+    -moz-box-shadow: 0 0 15px 3px #c63737;
+    transform: translateY(-90px);
+    -webkit-transform: translateY(-90px);
+  }
+  100% {
+    box-shadow: 0 0 15px -4px #c63737;
+    -webkit-box-shadow: 0 0 15px -4px #c63737;
+    -moz-box-shadow: 0 0 15px -4px #c63737;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+
+/* SHANE*/
+.txt-box h2 {
+  margin-top: 0;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  line-height: 105%;
+}
+
+.bg-box {
+  min-height: 600px;
+}
+
+.row.full {
+  max-width: 100%;
+}
+
+.txt-box {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.txt-box.dark {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.homerow {
+  height: 600px;
+}
+.hoverz {
+  height: 350px;
+  width: 100%;
+}
+.hoverz h3{
+  font-size: 350px;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.txt-inner {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0 0;
+}
+
+.txt-box h2 {
+  margin-top: 0;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  line-height: 105%;
+}
+
+.txt-box.dark h2 {
+  color: #fff;
+}
+
+.txt-inner img {
+  margin-bottom: 30px;
+}
+
+.txt-inner p {
+  font-size: 17px;
+  letter-spacing: .5px;
+  margin-bottom: 60px;
+}
+
+.dark .txt-inner p {
+  color: #fff;
+}
+/*SHANE*/
+/*********************************************************/
+
 
 
 </style>
 
 
-<body>
-<h1 class="title"> Personal Page</h1>
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
 
-<p> This is going to be my first attempt to do something for a personal github page. </p>
+
+<header>
+  
+  <div class="headerz text-center"> <h1>Welcome </h1></div>
+  
+</header>
+<body>
+	<div class="bodyz">
+		
+    <div class="hoverz text-center">
+			
+      <div class="H"><h3>H</h3></div><div class="O"><h3>O</h3></div><div class="V"><h3>V</h3></div><div class="E"><h3>E</h3></div><div class="R"><h3>R</h3></div>
+			
+		</div>
+
+		<div class="Menu floating-2">
+			<h1 class="title"> FLOATING SIGN!</h1>
+
+			
+		</div>
+
+		<div class="Movies ">
+			<h1 class="title"> Top Five things!</h1>
+
+			<p> Hello! I wasnt exactly sure what to make my website about. I manily want to a  reason to have a page to mess around with. </p>
+			<p> Usually when I am bored I like to rank stuff I like. Films, Bands, Pizza topings. Presidents. Its just a way to kill some time! So I think for my website I am going to take us all on a journey through some of my favorite stuff! Does that sound like a meaningful use of this excersice! I dont know! but  I hope the site looks good enought to make up for it.  </p>
+		</div>
+
+		
+
+
+		<div class="Books homerow">
+			<div class="movie1 txt-box dark ">
+				<div class="txt-inner text-center">
+				<h2 class='text-center'>Residential Cleaning</h2><p>Our qualified and experienced team practice safe cleaning techniques to protect the structural integrity of your beautiful home and or any surface we are cleaning in Cibolo and surrounding areas. We attend conventions, trade shows, seminars, and manufacturers’ demos on the latest chemical and cleaners, stain removing and methods. • We guarantee all work performed will be completed as specified in a professional, workmanlike manner following standard trade practices and safety guidelines.</p>
+			
+				</div>
+			</div><div class="bg-box movie2" id="Zpace-2"></div>
+		</div>
+		<div class="Books homerow">
+		
+			<div class="bg-box movie2" id="Zpace">
+			<div class="txt-inner text-center">
+				<div class="bar-1" id="bar1"></div>
+				<div class="bar-1 x2" id="bar2"></div>
+				<div class="bar-1 x3" id="bar3"></div>
+				<div class="bar-1 x4" id="bar4"></div>
+				<div class="bar-1 x5" id="bar5"></div>
+			</div></div><div class="movie1 txt-box dark ">
+				<div class="txt-inner text-center">
+				<h2 class='text-center'>The Space Waltz</h2><p>This is the one part of this site that I slightly cheated and used jQuery. Sorry! It was something I made for work that I think is just really fun to play with! <br> Go ahead! Hover over the bar</p>
+				
+				</div>
+			</div>
+			</div></div>
+		</div>
+		<!-- <div class="Books homerow">
+			<div class="bar-1" id="bar1"></div>
+			<div class="bar-1" id="bar2"></div>
+			<div class="bar-1" id="bar3"></div>
+			<div class="bar-1" id="bar4"></div>
+			<div class="bar-1" id="bar5"></div>
+		</div>
+ -->	</div>
+
+<!-- 
+	<main class="main-div" id="home">
+
+		<div class="row full homerow">
+
+		<div class="large-6 columns txt-box light right">
+			<div class="txt-inner text-center">
+
+
+			<h2 class='text-center'>Commercial Cleaning</h2><p>%COMPANY% has built a solid reputation for first rate service that keeps our client list growing. Whether you manage a retail or rental property in %WORKCITY% and surrounding areas; handle the maintenance needs of a corporate office building, or keep a dining establishment looking its best,  the %COMPANY% team of professional ensures that your establishment shines bright to welcome clients and visitors.</p>
+			<a href="/commercial-window-washing/" class="page-btn">Learn More</a>
+			</div>
+			</div>
+			<div class="large-6 columns bg-box" id="building" left">
+			</div>
+
+		</div>
+
+		<div class="row full homerow">
+
+			<div class="large-6 columns txt-box dark left">
+			<div class="txt-inner text-center">
+			<h2 class='text-center'>Residential Cleaning</h2><p>Our qualified and experienced team practice safe cleaning techniques to protect the structural integrity of your beautiful home and or any surface we are cleaning in Cibolo and surrounding areas. We attend conventions, trade shows, seminars, and manufacturers’ demos on the latest chemical and cleaners, stain removing and methods. • We guarantee all work performed will be completed as specified in a professional, workmanlike manner following standard trade practices and safety guidelines.</p>
+			<a href="/residential-window-washers/" class="page-btn page-btn-2">Learn More</a>
+			</div>
+			</div>
+
+			<div class="large-6 columns bg-box right" id="pooldeck">
+			</div>
+
+		</div>
+
+	</main> -->
 </body>
