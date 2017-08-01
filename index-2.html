@@ -1,4 +1,7 @@
-
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
+<script src="https://use.fontawesome.com/d8e6d09d92.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
@@ -64,123 +67,231 @@
 </script>
 
 <style type="text/css">
-	.H{
-  background-color: #9bc995 ;
-  display: inline-block;
-  position:relative;
-  width:20%;
-  height: 350px;
-}.H:hover{
-  background-color: #8f3985 ;
-}.O{
-  background-color: #98b9ab ;
-  display: inline-block;
-  position: relative;
-  width:20%;
-  height: 350px;
-}.O:hover{
-  background-color: #564138  ;
-}.V{
-  background-color: #5171a5 ;
-  display: inline-block;
-  position: relative;
-  width:20%;
-  height: 350px;
-}.V:hover{
-  background-color: #db5461 ;
-}.E{
-  background-color: #3f3047 ;
-  display: inline-block;
-  position: relative;
-  width:20%;
-  height: 350px;
-}.E:hover{
-  background-color: #6dd3ce ;
-}.R{
-  background-color: #eef36a ;
-  display: inline-block;
-  position: relative;
-  width:20%;
-  height: 350px;
-}.R:hover{
-  background-color: #f46036 ;
+footer {
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, #004e92, #000428)
+    repeat
+    scroll
+    0
+    0;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  
 }
+footer p, footer a {
+  color: white;
+  font-size: 18px;
+}.footer-wrapper{
+  width: 75%;
+  margin: 0 auto;
+}.padz{
+  margin-top: 200px;
+}
+/*THIS IS THE CSS FOR THE HOVER SECTION*/
+.H {
+  background: url(https://www.quebecoriginal.com/en/listing/images/master/f70165f5-4015-432e-8bb9-04c8a1b11f18/parc-regional-de-val-david-val-morin-secteur-dufresne-escalade.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 350px;
+}
+.H:hover {
+  background: #e29898;
+}
+.wordH::after {
+  content: "Val David";
+  font-size: 50px;
+  font-family: 'Fredoka One', cursive;
+  color: #fff;
+  left: 0%;
+  bottom: -9%;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}
+.wordH:hover::after {
+  opacity: 0;
+}
+.wordH::before {
+  content: "Located one hour north of Montréal, provincial park Val David boasts over 200 (predominantly bouldering) problems, and is one of my favourite spots in the Laurentians, the birthplace of Québec climbing and home to some of Canada's most stunning forests and waterfalls.";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}
+.wordH:hover::before {
+  opacity: 1;
+  bottom: 0px;
+  z-index: 10;
+  bottom: -100px;
+}
+.O {
+  background: url(http://cruxcrush.com/wp-content/uploads/2014/10/Kamouraska5.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 34%;
+  height: 350px;
+}
+.O:hover {
+  background: #e2d497;
+}
+.wordO::after {
+  content: "Kamouraska";
+  font-size: 50px;
+  font-family: 'Fredoka One', cursive;
+  opacity: 1;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  height: 350px;
+  left: 0%;
+  bottom: -9%;
+}
+.wordO:hover::after {
+  opacity: 0;
+}
+.wordO::before {
+  content: "Four hours east of Montréal along the Saint Lawrence river, Kamouraska boasts over 100 single-pitch routes, with top-roping options. With camping options available and the historic Québec City on the way, it provides the perfect opportunity for a weekend trip to climb and appreciate French Canadian culture.";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}
+.wordO:hover::before {
+  opacity: 1;
+  bottom: -100px;
+}
+.V {
+  background: url(https://c1.staticflickr.com/6/5252/5685031097_214f537a94_b.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 350px;
+}
+.V:hover {
+  background: #97e2ca;
+}
+.wordV::after {
+  content: "Lac Boisseau";
+  font-size: 50px;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  font-family: 'Fredoka One', cursive;
+  color: #fff;
+  left: 0%;
+  bottom: -9%;
+}
+.wordV:hover::after {
+  opacity: 0;
+}
+.wordV::before {
+  content: "Lac Boisseau is nestled about two hours north of the city, just past the famous slopes of Mont Tremblant. Here you'll find unique and challenging sport climbs, next to a wild and untouched lake. The perfect place to get away from it all.";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}
+.wordV:hover::before {
+  opacity: 1;
+  bottom: -100px;
+}
+.text-center {
+  text-align: center !important;
+}
+.hoverz {
+  height: 350px;
+  width: 100%;
+  margin-top: 200px;
+}
+.hoverz h3 {
+  font-size: 350px;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*END OF HOVER SECTION*/
 
-
-
-
-
-h1{
+h1 {
   font-family: 'Monoton', cursive;
-}body {
-  background: #fff;
-  margin-top: 250px;
+  font-size: 60px;
+}
+body {
+  /*   background: url(https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png); */
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_white_feathers.png);
+  margin: 250px 0 0 0;
   font-family: "Raleway", sans-serif;
 }
 header {
-  background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) fixed; 
+  /*   background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) fixed;  */
+  /*   background: url(https://media.giphy.com/media/3o7TKoLSUWybe97uWA/giphy.gif) fixed;  */
+  background: url(https://media.giphy.com/media/R9ft1Oj5aO9Us/giphy.gif) fixed;
   background-color: #fff;
   position: absolute;
   width: 100%;
   z-index: -1;
   top: 0;
   height: 200px;
-}.headerz{
-  position: relative; 
+}
+.headerz {
+  position: relative;
   margin: 2% auto;
   width: 33%;
-    
-}.headerz h1{
+}
+.headerz h1 {
   color: #fff;
-  font-size: 80px;
+  font-size: 60px;
   text-shadow: 1px 1px 1px #212121;
 }
 
 /*********************************************************/
-.text-center {
-  text-align: center !important;
-}
 .title {
   margin-top: 200px;
   color: red;
-  font-size: 19px;
-  
+  font-size: 50px;
 }
 .Movies {
-  background:grey;
- 
   margin: 0 auto;
   text-align: center;
-  /* maybe use max-width*/
-  width: 50%;
+  width: 66%;
+  background: rgba(255, 255, 255, 0.10);
 }
 .Menu {
-  background: linear-gradient(
-    to right,
-    #004e92,
-    #000428
-  );
+  background: linear-gradient(to right, #004e92, #000428);
   box-shadow: 1px 1px 1px black;
   margin: 0 auto;
   text-align: center;
   /* maybe use max-width*/
   width: 50%;
-}.Menu h1{
-  font-size: 100px;
+}
+.Menu h1 {
+  font-size: 80px;
 
   font-weight: bold;
 }
 
-
-.bodyz {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
-  display: inline;
-}
 .boxz3 {
   display: inline-block;
   width: 200px;
@@ -200,14 +311,63 @@ header {
   vertical-align: top;
   width: 50%;
 }
-.bg-box#Zpace {
-  background: url(http://thepatternlibrary.com/img/an.jpg) fixed;
-/*   background-size: cover; */
+.bg-box#Allez {
+  background: url(http://www.xplorocity.ca/partners/uploads/210/allez_up_montreal_rock_climbing_xplorocity.jpg)
+    fixed;
+  background-size: cover;
   background-position: center center;
-}.bg-box#Zpace-2 {
-  background: url(https://upload.wikimedia.org/wikipedia/commons/8/87/LH_95.jpg) fixed;
-/*   background-size: cover;
-  background-position: center center; */
+}
+.bg-box#Block {
+  background: url(https://www.walltopia.com/images/projects/Bloc_Shop/Bloc_Shop_2.jpg)
+    fixed;
+
+  background-size: cover;
+  background-position: center center;
+}
+.bg-box#ZeroG {
+  background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/18953488_1461107810618085_1216687164655213624_o.jpg?oh=9001c839f3339242df6deaf67e6e70de&oe=59F3DFD7)
+    fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.bg-box#Shakti {
+  background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12111979_1039045972793906_8087774435222674403_n.jpg?oh=32b98e04667366ad06eb3917cd87f718&oe=59FC9830)
+    fixed;
+
+  background-size: cover;
+  background-position: center center;
+}
+a.page-btn {
+  font-family: "Dosis", sans-serif;
+  background: none;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  display: inline-block;
+  padding: 7px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 46px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+a.page-btn:hover {
+  border: none;
+  text-shadow: 1px 2px 3px;
+  background: none;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 /*
 ==============================================
@@ -218,39 +378,37 @@ floating
 .floating-2 {
   animation-name: floating-2;
   -webkit-animation-name: floating-2;
+  -moz-animation-name: floating-2;
 
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
 
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
 }
 
 @keyframes floating-2 {
   0% {
     transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-160px);
+    -webkit-transform: translateY(16%);
+    -moz-transform: translateY(16%);
   }
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
   }
 }
 
-@-webkit-keyframes floating-2 {
-  0% {
-    -webkit-transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform: translateY(2%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
-}
 .bar-1 {
-  background: #fff;
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
   display: inline-block;
   height: 100px;
   position: relative;
@@ -272,8 +430,8 @@ floating
   animation-name: floating;
   -webkit-animation-name: floating;
 
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
 
   animation-iteration-count: 3;
   -webkit-animation-iteration-count: 3;
@@ -287,11 +445,11 @@ floating
     -webkit-transform: translateY(0px);
   }
   50% {
-    box-shadow: 0 0 15px 3px #000;
-    -webkit-box-shadow: 0 0 15px 3px #c63737;
-    -moz-box-shadow: 0 0 15px 3px #c63737;
-    transform: translateY(-90px);
-    -webkit-transform: translateY(-90px);
+    box-shadow: 0 0 15px 10px #000;
+    -webkit-box-shadow: 0 0 15px 10px #c63737;
+    -moz-box-shadow: 0 0 15px 10px #c63737;
+    transform: translateY(-400px);
+    -webkit-transform: translateY(-400px);
   }
   100% {
     box-shadow: 0 0 15px -4px #c63737;
@@ -302,7 +460,7 @@ floating
   }
 }
 
-/* SHANE*/
+/* SPACE BOXES*/
 .txt-box h2 {
   margin-top: 0;
   font-size: 34px;
@@ -335,20 +493,12 @@ floating
 .homerow {
   height: 600px;
 }
-.hoverz {
-  height: 350px;
-  width: 100%;
-}
-.hoverz h3{
-  font-size: 350px;
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 .txt-inner {
-  width: 100%;
   height: 100%;
+  margin: 0 auto;
   padding: 150px 0 0;
+  width: 75%;
 }
 
 .txt-box h2 {
@@ -378,59 +528,82 @@ floating
 .dark .txt-inner p {
   color: #fff;
 }
-/*SHANE*/
+p {
+  font-size: 25px;
+}
+/*SPACE BOXES*/
 /*********************************************************/
-
 
 
 </style>
 
-
-<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+ 
 
 
 <header>
   
-  <div class="headerz text-center"> <h1>Welcome </h1></div>
+  <div class="headerz text-center"> <h1>Welcome! </h1></div>
   
 </header>
 <body>
 	<div class="bodyz">
-		
-    <div class="hoverz text-center">
-			
-      <div class="H"><h3>H</h3></div><div class="O"><h3>O</h3></div><div class="V"><h3>V</h3></div><div class="E"><h3>E</h3></div><div class="R"><h3>R</h3></div>
-			
+    
+		<div class="Movies ">
+			<h1 class="title"> Your guide for climbing in Montréal, Québec. </h1>
+
+			<p> Whether you're looking for bouldering or sport climbing, indoor or outdoor problems, a high-intensity workout or relaxed gym experience - the city of Montréal and southern Québec offer a wide array of options to get you on (and up) the wall.  </p>
+      <p> Curious first timer or seasoned veteran, there is a Montréal gym to fit your bill. </p>
+      <p> If you're more the outdoorsy type, though, there are also sites just outside of the city that will bring you and your gear a bit closer to the Canadian wilderness. </p>
+      
+      
 		</div>
+    
 
 		<div class="Menu floating-2">
-			<h1 class="title"> FLOATING SIGN!</h1>
+			<h1 class="title"> INDOOR GYMS</h1>
 
 			
 		</div>
+    
 
-		<div class="Movies ">
-			<h1 class="title"> Top Five things!</h1>
-
-			<p> Hello! I wasnt exactly sure what to make my website about. I manily want to a  reason to have a page to mess around with. </p>
-			<p> Usually when I am bored I like to rank stuff I like. Films, Bands, Pizza topings. Presidents. Its just a way to kill some time! So I think for my website I am going to take us all on a journey through some of my favorite stuff! Does that sound like a meaningful use of this excersice! I dont know! but  I hope the site looks good enought to make up for it.  </p>
-		</div>
-
-		
-
-
-		<div class="Books homerow">
+		<div class="Books homerow padz">
 			<div class="movie1 txt-box dark ">
 				<div class="txt-inner text-center">
-				<h2 class='text-center'>Residential Cleaning</h2><p>Our qualified and experienced team practice safe cleaning techniques to protect the structural integrity of your beautiful home and or any surface we are cleaning in Cibolo and surrounding areas. We attend conventions, trade shows, seminars, and manufacturers’ demos on the latest chemical and cleaners, stain removing and methods. • We guarantee all work performed will be completed as specified in a professional, workmanlike manner following standard trade practices and safety guidelines.</p>
+				<h2 class='text-center'>Shakti Rock Gym</h2><p> My personal favourite, Shakti is located in Montréal's trendy Mile End neighbourhood and offers a bouldering experience with a mom & pop feel. With their team of experienced setters, they change their problems about once a month, and you can always expect to find challenging routes for any level of climber. All this with a laid-back, local feel and always the perfect soundtrack. </p>
+          <a href="http://shaktirockgym.com/" target="_blank" class="page-btn">Learn More</a>
 			
 				</div>
-			</div><div class="bg-box movie2" id="Zpace-2"></div>
+			</div><div class="bg-box movie2" id="Shakti"></div>
 		</div>
 		<div class="Books homerow">
 		
-			<div class="bg-box movie2" id="Zpace">
+			<div class="bg-box movie2" id="ZeroG">
+			<div class="txt-inner text-center">
+<!-- 				<div class="bar-1" id="bar1"></div>
+				<div class="bar-1 x2" id="bar2"></div>
+				<div class="bar-1 x3" id="bar3"></div>
+				<div class="bar-1 x4" id="bar4"></div>
+				<div class="bar-1 x5" id="bar5"></div> -->
+			</div></div><div class="movie1 txt-box dark ">
+				<div class="txt-inner text-center">
+				<h2 class='text-center'>Zero Gravity</h2><p>Located in an old theatre in the heart of Montréal's historic Plateau neighbourhood, Zero Gravity provides both bouldering and rope climbing in a beautiful setting. Yoga classes are included in the membership, so you're able to stretch it out between climbing sessions. </p>
+				<a href="https://www.zero-gravite.ca/en/" target="_blank" class="page-btn">Learn More</a>
+				</div>
+			</div>
+			</div>
+			  
+    
+    <div class="Books homerow">
+			<div class="movie1 txt-box dark ">
+				<div class="txt-inner text-center">
+				<h2 class='text-center'>Allez Up!</h2><p> Montréal's most popular climbing gym, this re-purposed factory in quartier Saint Henri is reknowned for hosting some of North America's most creative setters, all the while providing a fantastic view of the Canal LaChine as you make your way up an old grain silo. With its massive walls and challenging problems, this is one gym you don't want to miss.  </p>
+			<a href="https://allezup.com/en/" target="_blank" class="page-btn">Learn More</a>
+				</div>
+			</div><div class="bg-box movie2" id="Allez"></div>
+		</div>
+		<div class="Books homerow">
+		
+			<div class="bg-box movie2" id="Block">
 			<div class="txt-inner text-center">
 				<div class="bar-1" id="bar1"></div>
 				<div class="bar-1 x2" id="bar2"></div>
@@ -439,52 +612,33 @@ floating
 				<div class="bar-1 x5" id="bar5"></div>
 			</div></div><div class="movie1 txt-box dark ">
 				<div class="txt-inner text-center">
-				<h2 class='text-center'>The Space Waltz</h2><p>This is the one part of this site that I slightly cheated and used jQuery. Sorry! It was something I made for work that I think is just really fun to play with! <br> Go ahead! Hover over the bar</p>
-				
+				<h2 class='text-center'>Bloc Shop</h2><p> A bouldering gym with two locations in Parc Extension and Hochelaga neighbourhoods, Bloc Shop boasts the largest facilities in the city, complete with climbing workshops, summer camps, and even live music events in the evenings. One visit alone will convince you of its Québécois coolness. </p>
+				<a href="http://blocshop.com/" target="_blank" class="page-btn">Learn More</a>
 				</div>
 			</div>
-			</div></div>
+			</div>
+			</div>
 		</div>
-		<!-- <div class="Books homerow">
-			<div class="bar-1" id="bar1"></div>
-			<div class="bar-1" id="bar2"></div>
-			<div class="bar-1" id="bar3"></div>
-			<div class="bar-1" id="bar4"></div>
-			<div class="bar-1" id="bar5"></div>
+</div>
+
+<div class="Menu floating-2">
+			<h1 class="title"> OUTDOOR</h1>
+
+			
 		</div>
- -->	</div>
-
-<!-- 
-	<main class="main-div" id="home">
-
-		<div class="row full homerow">
-
-		<div class="large-6 columns txt-box light right">
-			<div class="txt-inner text-center">
-
-
-			<h2 class='text-center'>Commercial Cleaning</h2><p>%COMPANY% has built a solid reputation for first rate service that keeps our client list growing. Whether you manage a retail or rental property in %WORKCITY% and surrounding areas; handle the maintenance needs of a corporate office building, or keep a dining establishment looking its best,  the %COMPANY% team of professional ensures that your establishment shines bright to welcome clients and visitors.</p>
-			<a href="/commercial-window-washing/" class="page-btn">Learn More</a>
-			</div>
-			</div>
-			<div class="large-6 columns bg-box" id="building" left">
-			</div>
-
+<div class="hoverz text-center">
+			
+   <div class="H"><div class="wordH"></div></div><div class="O"><div class="wordO"></div></div><div class="V"><div class="wordV"></div></div>
+			
 		</div>
 
-		<div class="row full homerow">
-
-			<div class="large-6 columns txt-box dark left">
-			<div class="txt-inner text-center">
-			<h2 class='text-center'>Residential Cleaning</h2><p>Our qualified and experienced team practice safe cleaning techniques to protect the structural integrity of your beautiful home and or any surface we are cleaning in Cibolo and surrounding areas. We attend conventions, trade shows, seminars, and manufacturers’ demos on the latest chemical and cleaners, stain removing and methods. • We guarantee all work performed will be completed as specified in a professional, workmanlike manner following standard trade practices and safety guidelines.</p>
-			<a href="/residential-window-washers/" class="page-btn page-btn-2">Learn More</a>
-			</div>
-			</div>
-
-			<div class="large-6 columns bg-box right" id="pooldeck">
-			</div>
-
-		</div>
-
-	</main> -->
-</body>
+</body><footer>
+  <div class="footer-wrapper"> 
+  <p>This site was designed by Mario Kataoka.</p>
+  <p>Disclaimer: All the content in this website is purely meant for the Founders and Coders application, and not for distribution purposes. If you have any questions about the content, please contact me.</p>
+    <p>The animation that that causes the bars to dance was something that I made for fun. Though it does use jQuery, I thought it was interesting enough that to still be in my application.</p>
+  <a href="https://github.com/TySlothrop" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/feed/?trk=" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <p><a href="mailto:mario.c.kataoka@gmail.com">
+  mario.c.kataoka@gmail.com</a>.</p>
+  </div></footer> 
