@@ -12,77 +12,58 @@
 <!--**********************JS***********JS*************************************************************************************************-->
 
 <script type="text/javascript">
-    var bar1 = document.getElementById("bar1");
-    //add the class that makes the bars float when the mouse hovers over the bars
-    bar1.addEventListener(
-      "mouseover",
-      function() {
-        bar1.classList.add("floating");
-
-        setTimeout(function() {
-          bar1.classList.remove("floating");
-        }, 12000);
-      },
-      false
-    );
-
-    var bar2 = document.getElementById("bar2");
-
-    bar2.addEventListener(
-      "mouseover",
-      function() {
-        bar2.classList.add("floating");
-
-        setTimeout(function() {
-          bar2.classList.remove("floating");
-        }, 12000);
-      },
-      false
-    );
-
-    var bar3 = document.getElementById("bar3");
-
-    bar3.addEventListener(
-      "mouseover",
-      function() {
-        bar3.classList.add("floating");
-
-        setTimeout(function() {
-          bar3.classList.remove("floating");
-        }, 12000);
-      },
-      false
-    );
-
-    var bar4 = document.getElementById("bar4");
-
-    bar4.addEventListener(
-      "mouseover",
-      function() {
-        bar4.classList.add("floating");
-
-        setTimeout(function() {
-          bar4.classList.remove("floating");
-        }, 12000);
-      },
-      false
-    );
-
-    var bar5 = document.getElementById("bar5");
-
-    bar5.addEventListener(
-      "mouseover",
-      function() {
-        bar5.classList.add("floating");
-
-        setTimeout(function() {
-          bar5.classList.remove("floating");
-        }, 12000);
-      },
-      false
-    );
-
-
+  $(function() {
+  var aniMate1 = $("#bar1");
+  var aniMate2 = $("#bar2");
+  var aniMate3 = $("#bar3");
+  var aniMate4 = $("#bar4");
+  var aniMate5 = $("#bar5");
+  aniMate1.hover(function() {
+    var timer = aniMate1.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate1.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate1.removeClass("floating");
+    }, 12000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+  aniMate2.hover(function() {
+    var timer = aniMate2.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate2.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate2.removeClass("floating");
+    }, 12000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+  aniMate3.hover(function() {
+    var timer = aniMate3.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate3.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate3.removeClass("floating");
+    }, 12000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+  aniMate4.hover(function() {
+    var timer = aniMate4.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate4.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate4.removeClass("floating");
+    }, 12000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+  aniMate5.hover(function() {
+    var timer = aniMate5.data("timer") || 0;
+    clearTimeout(timer);
+    aniMate5.addClass("floating");
+    timer = setTimeout(function() {
+      aniMate5.removeClass("floating");
+    }, 12000); // 2000 is in mil sec eq to 2 sec.
+    aniMate1.data("timer", timer);
+  });
+});
 </script>
 
 <!--**********************CSS***********CSS***********************************************************************************************-->
