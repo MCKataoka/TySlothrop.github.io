@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fanwood+Text" rel="stylesheet">
+
+
+<!--**********************JS***********JS*************************************************************************************************-->
+
+<script type="text/javascript">
+    var bar1 = document.getElementById("bar1");
+    //add the class that makes the bars float when the mouse hovers over the bars
+    bar1.addEventListener(
+      "mouseover",
+      function() {
+        bar1.classList.add("floating");
+
+        setTimeout(function() {
+          bar1.classList.remove("floating");
+        }, 12000);
+      },
+      false
+    );
+
+    var bar2 = document.getElementById("bar2");
+
+    bar2.addEventListener(
+      "mouseover",
+      function() {
+        bar2.classList.add("floating");
+
+        setTimeout(function() {
+          bar2.classList.remove("floating");
+        }, 12000);
+      },
+      false
+    );
+
+    var bar3 = document.getElementById("bar3");
+
+    bar3.addEventListener(
+      "mouseover",
+      function() {
+        bar3.classList.add("floating");
+
+        setTimeout(function() {
+          bar3.classList.remove("floating");
+        }, 12000);
+      },
+      false
+    );
+
+    var bar4 = document.getElementById("bar4");
+
+    bar4.addEventListener(
+      "mouseover",
+      function() {
+        bar4.classList.add("floating");
+
+        setTimeout(function() {
+          bar4.classList.remove("floating");
+        }, 12000);
+      },
+      false
+    );
+
+    var bar5 = document.getElementById("bar5");
+
+    bar5.addEventListener(
+      "mouseover",
+      function() {
+        bar5.classList.add("floating");
+
+        setTimeout(function() {
+          bar5.classList.remove("floating");
+        }, 12000);
+      },
+      false
+    );
+
+
+</script>
+
+<!--**********************CSS***********CSS***********************************************************************************************-->
+
+<style type="text/css">
+/*
+==============================================
+Basic Stuff
+==============================================
+*/
+body {
+  /*   background: url(https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png); */
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_white_feathers.png);
+  margin: 0px 0 0 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+header {
+  /*   background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) fixed;  */
+  /*   background: url(https://media.giphy.com/media/3o7TKoLSUWybe97uWA/giphy.gif) fixed;  */
+  background: url(https://media.giphy.com/media/R9ft1Oj5aO9Us/giphy.gif) fixed;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  height: 200px;
+}h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}p {
+  font-size: 20px;
+}h3 {
+  font-size: 27px;
+  line-height: 1.25;
+}.padz{
+  margin-top: 200px;
+}.padz-2{
+  margin-top: 140px !important;
+}.text-center {
+  text-align: center !important;
+}.hoverz {
+  height: 350px;
+  width: 100%;
+  margin-top: 200px;
+}.hoverz h3 {
+  font-size: 350px;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}.headerz {
+  position: relative;
+  margin: 2% auto;
+  width: 33%;
+}
+.headerz h1 {
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 1px 1px 1px #212121;
+}.right {
+    float: right !important;
+}
+/*
+==============================================
+Font-Awesome / CodeWars Image
+==============================================
+*/
+.fa {
+    font-size: 145px !important;
+    padding: 0 7% !important;
+    color: #FE5B5B !important;
+}.codeWars {
+    width: 15%;
+    padding: 0 7%;
+    bottom: -18px;
+    position: relative;
+}
+/*
+==============================================
+Floating Bars
+==============================================
+*/
+.bar-1 {
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  width: 8%;
+}.x2 {
+  height: 150px !important;
+}.x3 {
+  height: 200px !important;
+}.x4 {
+  height: 300px !important;
+}.x5 {
+  height: 350px !important;
+}
+/*
+==============================================
+Animations
+==============================================
+*/
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+
+  animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+}
+@keyframes floating {
+  0% {
+    box-shadow: 0 0 15px -4px #c63737;
+    -webkit-box-shadow: 0 0 15px -4px #c63737;
+    -moz-box-shadow: 0 0 15px -4px #c63737;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 0 15px 10px #000;
+    -webkit-box-shadow: 0 0 15px 10px #c63737;
+    -moz-box-shadow: 0 0 15px 10px #c63737;
+    transform: translateY(-400px);
+    -webkit-transform: translateY(-400px);
+  }
+  100% {
+    box-shadow: 0 0 15px -4px #c63737;
+    -webkit-box-shadow: 0 0 15px -4px #c63737;
+    -moz-box-shadow: 0 0 15px -4px #c63737;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}.floating-2 {
+  animation-name: floating-2;
+  -webkit-animation-name: floating-2;
+  -moz-animation-name: floating-2;
+
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+}
+@keyframes floating-2 {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-160px);
+    -webkit-transform: translateY(16%);
+    -moz-transform: translateY(16%);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+  }
+}
+/*
+==============================================
+This is the set up of the hover section
+==============================================
+*/
+.H {
+  background: url(https://tyslothrop.github.io/Climbing-Git.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 350px;
+}.H:hover {
+  background: #e29898;
+}.wordH::after {
+  content: "Climbing";
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+  color: #fff;
+  left: 0%;
+  bottom: -9%;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}.wordH:hover::after {
+  opacity: 0;
+}.wordH::before {
+  content: "I discovered climbing about 3 years ago at a bouldering gym in Montréal, and it quickly became my favourite pasttime. I love that to get to the top of the wall, I am forced to solve the 'problem' by trying and retrying, changing my approach, and seeking advice, slowly building my strength along the way. It's probably why I enjoy coding as well! Climbing outdoors is a big perk too; it is such a rush to finish a climb and overlook some beautiful Québec mountains!";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}.wordH:hover::before {
+  opacity: 1;
+  bottom: 0px;
+  z-index: 10;
+  bottom: -100px;
+}.O {
+  background: url(https://tyslothrop.github.io/Camping-Git.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 34%;
+  height: 350px;
+}.O:hover {
+  background: #e2d497;
+}.wordO::after {
+  content: "Camping";
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+  opacity: 1;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  height: 350px;
+  left: 0%;
+  bottom: -9%;
+}.wordO:hover::after {
+  opacity: 0;
+}.wordO::before {
+  content: "After moving to Canada I really grew a love for the outdoors. Over the past 7 years I've spent many a summer weekend out in the woods with friends, and have many fond memories of calming hikes and playing music around a camp fire.";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}.wordO:hover::before {
+  opacity: 1;
+  bottom: -100px;
+}.V {
+  background: url(https://tyslothrop.github.io/Cooking-Git.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 350px;
+}.V:hover {
+  background: #97e2ca;
+}.wordV::after {
+  content: "Cooking";
+  font-size: 50px;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  font-family: 'Abril Fatface', cursive;
+  color: #fff;
+  left: 0%;
+  bottom: -9%;
+}.wordV:hover::after {
+  opacity: 0;
+}.wordV::before {
+  content: "My favorite activity for when I have a lot of time at home is to cook a big meal. I love to try new recipes, invite my friends over, and spend the night talking over good food! In the short Canadian summers I enjoy trying out the grill; it may not be as challenging but everything cooked on charcoal is perfection!";
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 90%;
+  left: 0%;
+  bottom: -200px;
+  transition: all .75s ease;
+  width: 100%;
+  height: 350px;
+}.wordV:hover::before {
+  opacity: 1;
+  bottom: -100px;
+}
+/*
+==============================================
+Set up for the titles of each section
+==============================================
+*/
+.Menu {
+  background: #098e54;
+  box-shadow: 1px 1px 1px black;
+  margin: 150px auto;
+  text-align: center;
+  /* maybe use max-width*/
+  
+}.Menu h1 {
+  font-size: 80px;
+
+  font-weight: bold;
+}.title {
+  margin-top: 100px;
+  color: #c6af3b;
+  font-size: 80px;
+  position: relative;
+  z-index:10;
+}.title-about-me {
+  margin-top: 0px;
+  color: #c6af3b;
+  font-size: 80px;
+  position: relative;
+  z-index:10;
+}.Movies {
+  margin: 0 auto;
+  text-align: center;
+  width: 66%;
+  background: rgba(255, 255, 255, 0.10);
+}.Movies h3{
+  font-size: 25px;
+}.Movies p{
+  font-size: 20px;
+  font-family: 'Fanwood Text', serif;
+}/*
+==============================================
+Set up for the work experience/about me section
+==============================================
+*/
+.homerow {
+  height: 500px;
+}.homerow-2 {
+  height: 100vh !important;
+}.movie1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}.movie2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}.bg-box#Allez {
+  background: url(https://tyslothrop.github.io/DMA-Git.jpg);
+  background-size: cover;
+  background-position: center center; 
+}.bg-box#Block {
+  background: url(https://tyslothrop.github.io/LinkNow-Git.jpg);
+
+  background-size: cover;
+  background-position: center center;
+}.bg-box-2#profile {
+  background: url(https://tyslothrop.github.io/Profile-Git.jpg);
+
+  background-size: cover;
+  background-position: center center;
+}.bg-box#ZeroG {
+  background: url(https://tyslothrop.github.io/tmt-git.jpg);
+  background-size: cover;
+  background-position: center center;
+}.bg-box#Shakti {
+  background: url(https://tyslothrop.github.io/McGill-Git.jpg);
+  background-size: cover;
+  background-position: center center;
+}.mcgill {
+    width: 40%;
+    position: relative;
+}.tmt {
+    width: 14%;
+    position: relative;
+}.linknow {
+    width: 40%;
+    position: relative;
+}.dma {
+    width: 40%;
+    position: relative;
+}a.page-btn {
+  font-family: "Dosis", sans-serif;
+  background: none;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  display: inline-block;
+  padding: 7px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 46px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}a.page-btn:hover {
+  border: none;
+  text-shadow: 1px 2px 3px;
+  background: none;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}.bg-box {
+  min-height: 500px;
+}.bg-box-2 {
+  min-height: 100vh !important;
+}.boxz3 {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  background: url(https://media.giphy.com/media/26gskofCNU8Tl4duU/giphy.gif)
+    fixed;
+  background-size: cover;
+}.row.full {
+  max-width: 100%;
+}.txt-box {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}.txt-box.dark {
+  background: #098e54;
+}.txt-box h2 {
+  margin-top: 0;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  line-height: 105%;
+  font-family: 'Quattrocento', serif;
+}.txt-box.dark h2 {
+  color: #fff;
+}.txt-inner {
+  height: 100%;
+  margin: 0 auto;
+  padding: 75px 0 0;
+  width: 75%;
+}.txt-inner-2 {
+  padding: 5px 0 0 !important;
+}.txt-inner p {
+  font-size: 20px;
+  
+  margin-bottom: 60px;
+  font-family: 'Fanwood Text', serif;
+}.dark .txt-inner p {
+  color: #fff;
+}
+/* .txt-inner img {
+  margin-bottom: 30px;
+} */
+
+/*
+==============================================
+Footer
+==============================================
+*/
+footer {
+  background: #098e54;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  
+}
+footer p, footer a {
+  color: white;
+  font-size: 18px;
+}.footer-wrapper{
+  width: 75%;
+  margin: 0 auto;
+}
+/*
+==============================================
+For Laptop
+==============================================
+*/
+@media only screen and (max-width: 1400px) { 
+  h3 {
+      font-size: 22px;
+      line-height: 1.25;
+  }.Movies p {
+      font-size: 17px;
+      line-height: 1.25;
+  }.Movies h3{
+  font-size: 22px;
+  }.txt-inner p {
+      font-size: 17px;
+      margin-bottom: 60px;
+      font-family: 'Fanwood Text', serif;
+  }
+
+}
+@media only screen and (max-width: 1250px) { 
+  h3 {
+      font-size: 18px;
+      line-height: 1.25;
+  }.Movies p {
+      font-size: 15px;
+      line-height: 1.25;
+  }.Movies h3{
+  font-size: 18px;
+  }.txt-inner p {
+      font-size: 15px;
+      margin-bottom: 60px;
+      font-family: 'Fanwood Text', serif;
+  }.fa {
+    font-size: 145px !important;
+    padding: 0 5% !important;
+    
+  }.codeWars {
+      width: 19%;
+      padding: 0 5%;
+      bottom: -18px;
+  }
+
+}
+/*
+==============================================
+For Tablet Landscape View
+==============================================
+*/
+@media only screen and (max-width: 1024px) { 
+  .title-about-me {
+  margin-top: 0px;
+  color: #c6af3b;
+  font-size: 55px;
+  position: relative;
+  z-index:10;
+  }.txt-inner-3 {
+    padding: 30px 0 0 !important;
+  }h3 {
+      font-size: 17px;
+      line-height: 1.25;
+  }.Movies p {
+      font-size: 15px;
+      line-height: 1.25;
+  }.Movies h3{
+  font-size: 18px;
+  }
+}
+/*
+==============================================
+For Tablet/Mobile
+==============================================
+*/
+@media only screen and (max-width: 768px) { 
+  .fa {
+    font-size: 100px !important;
+    padding: 0 5% !important;
+    
+  }.codeWars {
+      width: 21%;
+      padding: 0 5%;
+      bottom: -18px;
+  }.Menu {
+    margin: 75px auto;
+  }.movie1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  }.movie2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  }.homerow {
+  height: auto;
+  }.homerow-2 {
+  height: auto !important;
+  }.bg-box {
+  min-height: 450px !important;
+  }.bg-box-2 {
+  min-height: 500px !important;
+  }.padz-2{
+  margin-top: 0px !important;
+  }.txt-inner p {
+   margin-bottom: 10px;
+  }.Movies {
+    width: 83%;
+  }.txt-inner p {
+    font-size: 17px;
+    margin-bottom: 60px;
+    font-family: 'Fanwood Text', serif;
+  }.Movies p {
+      font-size: 17px;
+      line-height: 1.25;
+  }a.page-btn {
+      margin-bottom: 50px;
+  }.wordH::before {
+    font-size: 17px;   
+  }.wordO::before {
+    font-size: 17px;   
+  }.wordV::before {
+    font-size: 17px;   
+  }.H {
+    width: 100%;
+    height: 350px;
+  }.O {
+    width: 100%;
+    height: 350px;
+  }.V {
+    width: 100%;
+    height: 350px;
+  }.hoverz {
+    height: auto;
+    width: 100%;
+    margin-top: 200px;
+  }footer {
+    height: 250px;
+  }
+}
+/*
+==============================================
+Prereq Links for Mobile
+==============================================
+*/
+@media only screen and (max-width: 450px) { 
+  .codeWars {
+    width: 21%;
+    padding: 0 3%;
+    bottom: -10px;
+  }.fa {
+    font-size: 50px !important;
+    padding: 0 3% !important;
+  }
+}
+
+</style>
+
+ <!--**********************HTML***********HTML*********************************************************************************************-->
+
+<body>
+  <div class="bodyz">
+     <!--**********************THIS IS THE INTRODUCTION SECTION*********************************************************************************************-->
+    <div class="Books homerow homerow-2">
+
+      <div class="bg-box bg-box-2 movie2" id="profile">
+        <div class="txt-inner txt-inner-2 text-center">
+        </div>
+      </div><div class="movie1 txt-box  ">
+        <div class="txt-inner text-center txt-inner-3">
+          <h1 class="title-about-me"> My name is<br> Mario Kataoka </h1>
+          <h3>  Allow me to introduce myself. </h3>
+          <h3>The abridged version is that I'm a 25 year old Californian with a Brazilian family, living in Canada and eager to see more of the world.</h3>
+          <p> I was born in Toronto to Brazilian parents, and though most of my family is from Fortaleza in the north of the country (known for forro music and white sand beaches), I spent my young childhood just outside of São Paolo, before moving briefly
+            to the Spanish basque country and finally to San Diego, California. Upon finishing high school I opted not for a university in
+            the United States but in my birth country, Canada. McGill is one of two anglophone universities in Montréal, Québec - a very unique bilingual city where the rest of my story (so far) takes place.</p>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="Movies padz-2">
+      <h3> What seems like a less straightforward path in life applies to my career choice as well. </h3>
+          <p> Though I started a bachelor's in Civil Engineering, after taking a computer science course I quickly found that my interest lies in programming, especially within an educational environment. Throughout my degree I found opportunities to teach others the basics of coding - through a Teaching Assistant position, my own tutoring business, and a summer tech camp - and took on side projects of my own to learn more about web development and hone my skills. With this experience I have been able to start breaking into the world of programming without a degree in Computer Science, and find experience in a field that truly inspires me. I honestly feel this to be my greatest achievement so far, and am excited to delve deeper. </p>
+          <h3> Another challenge awaits in London...</h3>
+          <p> My partner was recently given the opportunity to transfer to her studio's London headquarters, where she'll help create visual effects for movies. Since we had been looking for a chance to develop our careers and see a bit more of the world, deciding
+            to make the move was easy; we'll be in London for a few years, and I can't wait to explore everything this city has to offer. The hard part is pursuing my passion for programming within a new framework - a challenge I'm eager to overcome. </p>
+
+    </div>
+
+<!--**********************THIS IS THE PREREQUISITE SECTIONS SECTION*********************************************************************************************-->
+
+    <div class="Movies">
+      <h1 class="title Menu"> Prerequisite Links</h1>
+      <span><a href="https://github.com/TySlothrop/TySlothrop.github.io" target="_blank"><i class="fa fa-github floating-2" aria-hidden="true"></i></a> 
+            <a href="https://www.freecodecamp.org/tyslothrop" target="_blank"><i class="fa fa-free-code-camp floating-2" aria-hidden="true"></i></a> 
+            <a href="https://www.codewars.com/users/TySlothrop" target="_blank"><img class="codeWars floating-2" src="https://res.cloudinary.com/crunchbase-production/image/upload/v1400019742/pbpj9oxf1ipwrisnj9ia.png" alt="Code Wars"/></a></span>
+
+    </div>
+
+<!--**********************THIS IS THE WORK EXPERIENCE SECTION*********************************************************************************************-->
+    <div class="Movies ">
+      <h1 class="title Menu"> WORK EXPERIENCE</h1>
+
+
+    </div>
+
+
+    <div class="Books homerow padz">
+      <div class="movie1 txt-box dark ">
+        <div class="txt-inner text-center">
+          <h2 class='text-center'>Teaching Assistant at</h2><img class="mcgill" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/McGill_Wordmark.svg/1280px-McGill_Wordmark.svg.png" alt="Company Logo" />
+          <p> I was first introduced to C programming in 2012, while completing an undergraduate degree in Civil Engineering at McGill University in Montréal, Canada. The work interested me so much that I became a Teacher’s Assistant for that particular course
+            for the duration of my degree (from 2012-2015), giving lectures twice a week to a class of 20-30 first year students. </p>
+          <a href="https://www.mcgill.ca/study/2012-2013/courses/comp-208" target="_blank" class="page-btn">Learn More</a>
+
+        </div>
+      </div><div class="bg-box movie2" id="Shakti"></div>
+    </div>
+    <div class="Books homerow">
+
+      <div class="movie1 txt-box dark right">
+        <div class="txt-inner text-center">
+          <h2 class='text-center'>Founder of Tutor Me This!</h2><img class="tmt" src="http://tutormethis.ca/wp-content/uploads/2016/02/cropped-site_identity_small_square.png" alt="Company Logo" />
+          <p>Outside of my university schedule, I started a tutoring company called Tutor Me This! with a friend, that provided outside support for first year students in math, physics, and computer science (particularly C programming) courses. This is where
+            I got my first experience creating a website, to advertise this service. </p>
+          <a href="http://tutormethis.ca/" target="_blank" class="page-btn">Learn More</a>
+        </div>
+      </div><div class="bg-box movie2" id="ZeroG">
+        <div class="txt-inner text-center">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Books homerow">
+      <div class="movie1 txt-box dark ">
+        <div class="txt-inner text-center">
+          <h2 class='text-center'>Instructor with </h2><img class="dma" src="https://www.digitalmediaacademy.org/img/logo.svg" alt="Company Logo" />
+          <p> I also learned that I really enjoy the educational aspect of programming, so much so that I found work at a summer tech camp for kids in 2016, by the name of Digital Media Academy, which runs all across North America. My domain was robotics, and I helped 12-16 year olds make remote controlled cars using arduinos.   </p>
+          <a href="https://www.digitalmediaacademy.org/" target="_blank" class="page-btn">Learn More</a>
+        </div>
+      </div><div class="bg-box movie2" id="Allez"></div>
+    </div>
+    <div class="Books homerow">
+
+      <div class="movie1 txt-box dark right">
+        <div class="txt-inner text-center">
+          <h2 class='text-center'>Web integrator at </h2><img class="linknow" src="https://linknow.com/wp-content/themes/linknow-mainsite/images/linknowmedia-logo.png" alt="Company Logo" />
+          <p> For the past year I have worked to create websites for small businesses, customizing WordPress templates using HTML and CSS (with the occasional JavaScript). I am currently in charge of meeting the webpage needs of over
+            500 clients. </p>
+          <a href="https://linknow.com/" target="_blank" class="page-btn">Learn More</a>
+        </div>
+      </div><div class="bg-box movie2" id="Block">
+      </div>
+    </div>
+
+<!--**********************THIS IS THE FLOATING BARS SECTION*********************************************************************************************-->
+    <div class="Movies">
+      <h1 class="title Menu"> Something I made for fun</h1>
+      <div class="txt-inner text-center">
+        <div class="bar-1" id="bar1"></div>
+        <div class="bar-1 x2" id="bar2"></div>
+        <div class="bar-1 x3" id="bar3"></div>
+        <div class="bar-1 x4" id="bar4"></div>
+        <div class="bar-1 x5" id="bar5"></div>
+      </div>
+
+    </div>
+
+<!--**********************THIS IS THE HOBBIES SECTION*********************************************************************************************-->
+    <div class="Movies ">
+      <h1 class="title Menu"> Hobbies</h1>
+
+
+    </div>
+    <div class="hoverz text-center">
+
+      <div class="H">
+        <div class="wordH"></div>
+      </div><div class="O">
+        <div class="wordO"></div>
+      </div><div class="V">
+        <div class="wordV"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<!--**********************THIS IS THE FOOTER*********************************************************************************************-->
+<footer>
+  <div class="footer-wrapper">
+    <p>This site was designed by Mario Kataoka.</p>
+    <p>Disclaimer: All the content in this website is intended solely for the Founders and Coders application, and not for distribution purposes. If you have any questions about the content, please contact me.</p>
+
+
+    <p><a href="mailto:mario.c.kataoka@gmail.com">
+  mario.c.kataoka@gmail.com</a>.</p>
+  </div>
+</footer> 
