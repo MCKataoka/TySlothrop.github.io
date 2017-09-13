@@ -168,7 +168,7 @@ This is the set up of the hover section
   position: relative;
   width: 33%;
   height: 350px;
-}.H:hover:focus {
+}.H:hover, .H:active{
   background: #e29898;
 }.wordH::after {
   content: "Climbing";
@@ -180,7 +180,7 @@ This is the set up of the hover section
   position: absolute;
   width: 100%;
   height: 350px;
-}.wordH:hover:focus::after {
+}.wordH:hover::after {
   opacity: 0;
 }.wordH::before {
   content: "I discovered climbing about 3 years ago at a bouldering gym in Montréal, and it quickly became my favourite pasttime. I love that to get to the top of the wall, I am forced to solve the 'problem' by trying and retrying, changing my approach, and seeking advice, slowly building my strength along the way. It's probably why I enjoy coding as well! Climbing outdoors is a big perk too; it is such a rush to finish a climb and overlook some beautiful Québec mountains!";
@@ -193,7 +193,7 @@ This is the set up of the hover section
   transition: all .75s ease;
   width: 100%;
   height: 350px;
-}.wordH:hover:focus::before {
+}.wordH:hover::before {
   opacity: 1;
   bottom: 0px;
   z-index: 10;
@@ -206,7 +206,7 @@ This is the set up of the hover section
   position: relative;
   width: 34%;
   height: 350px;
-}.O:hover:focus {
+}.O:hover {
   background: #e2d497;
 }.wordO::after {
   content: "Camping";
@@ -219,7 +219,7 @@ This is the set up of the hover section
   height: 350px;
   left: 0%;
   bottom: -9%;
-}.wordO:hover:focus::after {
+}.wordO:hover::after {
   opacity: 0;
 }.wordO::before {
   content: "After moving to Canada I really grew a love for the outdoors. Over the past 7 years I've spent many a summer weekend out in the woods with friends, and have many fond memories of calming hikes and playing music around a camp fire.";
@@ -232,7 +232,7 @@ This is the set up of the hover section
   transition: all .75s ease;
   width: 100%;
   height: 350px;
-}.wordO:hover:focus::before {
+}.wordO:hover::before {
   opacity: 1;
   bottom: -100px;
 }.V {
@@ -243,7 +243,7 @@ This is the set up of the hover section
   position: relative;
   width: 33%;
   height: 350px;
-}.V:hover:focus {
+}.V:hover {
   background: #97e2ca;
 }.wordV::after {
   content: "Cooking";
@@ -256,7 +256,7 @@ This is the set up of the hover section
   color: #fff;
   left: 0%;
   bottom: -9%;
-}.wordV:hover:focus::after {
+}.wordV:hover::after {
   opacity: 0;
 }.wordV::before {
   content: "My favorite activity for when I have a lot of time at home is to cook a big meal. I love to try new recipes, invite my friends over, and spend the night talking over good food! In the short Canadian summers I enjoy trying out the grill; it may not be as challenging but everything cooked on charcoal is perfection!";
@@ -269,7 +269,7 @@ This is the set up of the hover section
   transition: all .75s ease;
   width: 100%;
   height: 350px;
-}.wordV:hover:focus::before {
+}.wordV:hover::before {
   opacity: 1;
   bottom: -100px;
 }
@@ -382,7 +382,7 @@ Set up for the work experience/about me section
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-}a.page-btn:hover:focus {
+}a.page-btn:hover {
   border: none;
   text-shadow: 1px 2px 3px;
   background: none;
