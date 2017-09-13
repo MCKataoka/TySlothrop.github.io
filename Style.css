@@ -519,7 +519,13 @@ For Tablet Landscape View
   font-size: 55px;
   position: relative;
   z-index:10;
-  }.txt-inner-3 {
+  }.title {
+  margin-top: 100px;
+  color: #c6af3b;
+  font-size: 55px;
+  position: relative;
+  z-index:10;
+}.txt-inner-3 {
     padding: 30px 0 0 !important;
   }h3 {
       font-size: 17px;
