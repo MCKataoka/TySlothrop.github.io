@@ -535,6 +535,12 @@ For Tablet Landscape View
       line-height: 1.25;
   }.Movies h3{
   font-size: 18px;
+  }.wordH::before {
+    font-size: 17px;   
+  }.wordO::before {
+    font-size: 17px;   
+  }.wordV::before {
+    font-size: 17px;   
   }
 }
 /*
@@ -584,12 +590,6 @@ For Tablet/Mobile
       line-height: 1.25;
   }a.page-btn {
       margin-bottom: 50px;
-  }.wordH::before {
-    font-size: 17px;   
-  }.wordO::before {
-    font-size: 17px;   
-  }.wordV::before {
-    font-size: 17px;   
   }.H {
     width: 100%;
     height: 350px;
