@@ -603,12 +603,6 @@ For Tablet/Mobile
     height: auto;
     width: 100%;
     margin-top: 200px;
-  }.wordH::before {
-    font-size: 22px;   
-  }.wordO::before {
-    font-size: 22px;   
-  }.wordV::before {
-    font-size: 22px;   
   }footer {
     height: 250px;
   }
