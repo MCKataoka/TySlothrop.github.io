@@ -483,7 +483,7 @@ For Laptop
   }
 
 }
-@media only screen and (max-width: 1250px) { 
+@media only screen and (max-width: 1300px) { 
   h3 {
       font-size: 18px;
       line-height: 1.25;
@@ -504,6 +504,12 @@ For Laptop
       width: 19%;
       padding: 0 5%;
       bottom: -18px;
+  }.wordH::before {
+    font-size: 17px;   
+  }.wordO::before {
+    font-size: 17px;   
+  }.wordV::before {
+    font-size: 17px;   
   }
 
 }
@@ -535,12 +541,6 @@ For Tablet Landscape View
       line-height: 1.25;
   }.Movies h3{
   font-size: 18px;
-  }.wordH::before {
-    font-size: 17px;   
-  }.wordO::before {
-    font-size: 17px;   
-  }.wordV::before {
-    font-size: 17px;   
   }
 }
 /*
@@ -603,6 +603,12 @@ For Tablet/Mobile
     height: auto;
     width: 100%;
     margin-top: 200px;
+  }.wordH::before {
+    font-size: 22px;   
+  }.wordO::before {
+    font-size: 22px;   
+  }.wordV::before {
+    font-size: 22px;   
   }footer {
     height: 250px;
   }
