@@ -554,7 +554,8 @@ For Tablet Landscape View
     opacity: 1;
      bottom: -100px;
      z-index: 10;
-     color: #f4f4f4;  
+     color: #f4f4f4;
+     text-shadow: 1px 1px 1px #282828;   
   }.O:hover {
     background: url(https://tyslothrop.github.io/Camping-Git.jpg);
   }.wordO:hover::after {
@@ -563,7 +564,8 @@ For Tablet Landscape View
     opacity: 1;
      bottom: -100px;
      z-index: 10;
-     color: #f4f4f4;  
+     color: #f4f4f4; 
+     text-shadow: 1px 1px 1px #282828;  
   }.V:hover {
     background: url(https://tyslothrop.github.io/Cooking-Git.jpg);
   }.wordV:hover::after {
@@ -572,7 +574,8 @@ For Tablet Landscape View
     opacity: 1;
      bottom: -100px;
      z-index: 10;
-     color: #f4f4f4; 
+     color: #f4f4f4;
+     text-shadow: 1px 1px 1px #282828; 
   }
 }
 /*
