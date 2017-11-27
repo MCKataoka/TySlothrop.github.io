@@ -59,12 +59,12 @@ Font-Awesome / CodeWars Image
 ==============================================
 */
 .fa {
-    font-size: 130px !important;
+    font-size: 125px !important;
     padding: 0 5% !important;
     color: #FE5B5B !important;
 }.codeWars {
-    height: 130px;
-    width: 130px;
+    height: 125px;
+    width: 125px;
     padding: 0 5%;
     bottom: -18px;
     position: relative;
@@ -652,12 +652,12 @@ Prereq Links for Mobile
 */
 @media only screen and (max-width: 450px) { 
   .codeWars {
-    width: 50px;
-    height: : 50px;
+    width: 42px;
+    height: 42px;
     padding: 0 3%;
     bottom: -10px;
   }.fa {
-    font-size: 50px !important;
+    font-size: 42px !important;
     padding: 0 3% !important;
   }footer {
     height: 300px;
