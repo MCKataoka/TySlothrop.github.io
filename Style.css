@@ -59,12 +59,12 @@ Font-Awesome / CodeWars Image
 ==============================================
 */
 .fa {
-    font-size: 145px !important;
-    padding: 0 7% !important;
+    font-size: 130px !important;
+    padding: 0 5% !important;
     color: #FE5B5B !important;
 }.codeWars {
-    width: 15%;
-    padding: 0 7%;
+    width: 11%;
+    padding: 0 5%;
     bottom: -18px;
     position: relative;
 }
