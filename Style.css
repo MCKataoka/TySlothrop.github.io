@@ -63,7 +63,8 @@ Font-Awesome / CodeWars Image
     padding: 0 5% !important;
     color: #FE5B5B !important;
 }.codeWars {
-    width: 11%;
+    height: 130px;
+    width: 130px;
     padding: 0 5%;
     bottom: -18px;
     position: relative;
@@ -501,7 +502,8 @@ For Laptop
     padding: 0 5% !important;
     
   }.codeWars {
-      width: 13%;
+      height: 80px;
+      width: 80px;
       padding: 0 5%;
       bottom: -11px;
   }.wordH::before {
@@ -585,13 +587,14 @@ For Tablet/Mobile
 */
 @media only screen and (max-width: 768px) { 
   .fa {
-    font-size: 100px !important;
+    font-size: 65px !important;
     padding: 0 5% !important;
     
   }.codeWars {
-      width: 21%;
+      width: 65px;
+      height: 65px;
       padding: 0 5%;
-      bottom: -18px;
+      bottom: -11px;
   }.Menu {
     margin: 75px auto;
   }.movie1 {
@@ -649,7 +652,8 @@ Prereq Links for Mobile
 */
 @media only screen and (max-width: 450px) { 
   .codeWars {
-    width: 21%;
+    width: 50px;
+    height: : 50px;
     padding: 0 3%;
     bottom: -10px;
   }.fa {
