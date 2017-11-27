@@ -161,7 +161,7 @@ This is the set up of the hover section
 ==============================================
 */
 .H {
-  background: url(https://tyslothrop.github.io/Climbing-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/Climbing-Git.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -199,7 +199,7 @@ This is the set up of the hover section
   z-index: 10;
   bottom: -100px;
 }.O {
-  background: url(https://tyslothrop.github.io/Camping-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/Camping-Git.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -236,7 +236,7 @@ This is the set up of the hover section
   opacity: 1;
   bottom: -100px;
 }.V {
-  background: url(https://tyslothrop.github.io/Cooking-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/Cooking-Git.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -329,25 +329,25 @@ Set up for the work experience/about me section
   vertical-align: top;
   width: 50%;
 }.bg-box#Allez {
-  background: url(https://tyslothrop.github.io/DMA-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/DMA-Git.jpg);
   background-size: cover;
   background-position: center center; 
 }.bg-box#Block {
-  background: url(https://tyslothrop.github.io/LinkNow-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/LinkNow-Git.jpg);
 
   background-size: cover;
   background-position: center center;
 }.bg-box-2#profile {
-  background: url(https://tyslothrop.github.io/Profile-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/Profile-Git.jpg);
 
   background-size: cover;
   background-position: center center;
 }.bg-box#ZeroG {
-  background: url(https://tyslothrop.github.io/tmt-git.jpg);
+  background: url(https://tyslothrop.github.io/images/tmt-git.jpg);
   background-size: cover;
   background-position: center center;
 }.bg-box#Shakti {
-  background: url(https://tyslothrop.github.io/McGill-Git.jpg);
+  background: url(https://tyslothrop.github.io/images/McGill-Git.jpg);
   background-size: cover;
   background-position: center center;
 }.mcgill {
@@ -547,7 +547,7 @@ For Tablet Landscape View
   ==============================================
   */
   .H:hover {
-    background: url(https://tyslothrop.github.io/Climbing-Git.jpg);
+    background: url(https://tyslothrop.github.io/images/Climbing-Git.jpg);
   }.wordH:hover::after {
     opacity: 1;
   }.wordH::before {
@@ -557,7 +557,7 @@ For Tablet Landscape View
      color: #f4f4f4;
      text-shadow: 1px 1px 1px #282828;   
   }.O:hover {
-    background: url(https://tyslothrop.github.io/Camping-Git.jpg);
+    background: url(https://tyslothrop.github.io/images/Camping-Git.jpg);
   }.wordO:hover::after {
     opacity: 1;
   }.wordO::before {
@@ -567,7 +567,7 @@ For Tablet Landscape View
      color: #f4f4f4; 
      text-shadow: 1px 1px 1px #282828;  
   }.V:hover {
-    background: url(https://tyslothrop.github.io/Cooking-Git.jpg);
+    background: url(https://tyslothrop.github.io/images/Cooking-Git.jpg);
   }.wordV:hover::after {
     opacity: 1;
   }.wordV::before {
